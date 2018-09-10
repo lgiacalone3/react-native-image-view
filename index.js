@@ -830,11 +830,11 @@ export default class ImageView extends Component<PropsType, StateType> {
         // toggle footer and header
         this.setState({panelsVisible});
 
-        Animated.timing(this.headerTranslateValue.y, {
-            toValue: !panelsVisible ? -HEADER_HEIGHT : 0,
-            duration: 200,
-            useNativeDriver: true,
-        }).start();
+        // Animated.timing(this.headerTranslateValue.y, {
+        //     toValue: !panelsVisible ? -HEADER_HEIGHT : 0,
+        //     duration: 200,
+        //     useNativeDriver: true,
+        // }).start();
 
         if (this.footerHeight > 0) {
             Animated.timing(this.footerTranslateValue.y, {
